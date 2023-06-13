@@ -6,9 +6,7 @@ public class Main {
     public static void main(String[] args) {
         CustomerController customerController = new CustomerController();
         try {
-            Customer customer = new Customer();
-            customer.InputData();
-            customerController.addNewCustomer(customer);
+           customerController.getAll();
 
         }catch (Exception e){
             System.out.println(e.getMessage());
